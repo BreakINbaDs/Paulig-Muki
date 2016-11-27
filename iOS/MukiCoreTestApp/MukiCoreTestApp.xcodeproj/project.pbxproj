@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1899C9D41DEA3D9B00F1D4D1 /* blackBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 1899C9D31DEA3D9B00F1D4D1 /* blackBackground.png */; };
+		1899C9DA1DEA4D2300F1D4D1 /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = 1899C9D91DEA4D2300F1D4D1 /* black.png */; };
 		7FB445881D7471F000C5E0D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB445871D7471F000C5E0D6 /* main.m */; };
 		7FB4458B1D7471F000C5E0D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4458A1D7471F000C5E0D6 /* AppDelegate.m */; };
 		7FB4458E1D7471F000C5E0D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4458D1D7471F000C5E0D6 /* ViewController.m */; };
 		7FB445911D7471F000C5E0D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB4458F1D7471F000C5E0D6 /* Main.storyboard */; };
 		7FB445931D7471F000C5E0D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FB445921D7471F000C5E0D6 /* Assets.xcassets */; };
 		7FB445961D7471F000C5E0D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB445941D7471F000C5E0D6 /* LaunchScreen.storyboard */; };
-		7FB445A01D7475EE00C5E0D6 /* libMukiCupAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB4459F1D7475EE00C5E0D6 /* libMukiCupAccess.a */; };
+		7FB445A01D7475EE00C5E0D6 /* libMukiCupAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB4459F1D7475EE00C5E0D6 /* libMukiCupAccess.a */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1899C9D31DEA3D9B00F1D4D1 /* blackBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackBackground.png; sourceTree = "<group>"; };
+		1899C9D91DEA4D2300F1D4D1 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
 		7F6F33E21D953D25007042A0 /* DeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
 		7FB445831D7471F000C5E0D6 /* MukiCoreTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MukiCoreTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB445871D7471F000C5E0D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 		7FB445A41D74760700C5E0D6 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				1899C9D91DEA4D2300F1D4D1 /* black.png */,
+				1899C9D31DEA3D9B00F1D4D1 /* blackBackground.png */,
 				FA1130E31D74EE7100A30445 /* Utilities.h */,
 				7F6F33E21D953D25007042A0 /* DeviceInfo.h */,
 				7FB445A11D7475FE00C5E0D6 /* ImageProperties.h */,
@@ -127,12 +133,13 @@
 		7FB4457B1D7471F000C5E0D6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Muki;
 				TargetAttributes = {
 					7FB445821D7471F000C5E0D6 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 27FQ4THS6C;
+						DevelopmentTeam = 94D4YW8424;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -162,6 +169,8 @@
 				7FB445961D7471F000C5E0D6 /* LaunchScreen.storyboard in Resources */,
 				7FB445931D7471F000C5E0D6 /* Assets.xcassets in Resources */,
 				7FB445911D7471F000C5E0D6 /* Main.storyboard in Resources */,
+				1899C9D41DEA3D9B00F1D4D1 /* blackBackground.png in Resources */,
+				1899C9DA1DEA4D2300F1D4D1 /* black.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,8 +223,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -258,8 +269,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -286,14 +299,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 27FQ4THS6C;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 94D4YW8424;
 				INFOPLIST_FILE = MukiCoreTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MukiCoreTestApp",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.paulig.MukiCoreTestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RomanRoma.MukiCoreTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -302,14 +317,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 27FQ4THS6C;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 94D4YW8424;
 				INFOPLIST_FILE = MukiCoreTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MukiCoreTestApp",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.paulig.MukiCoreTestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RomanRoma.MukiCoreTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

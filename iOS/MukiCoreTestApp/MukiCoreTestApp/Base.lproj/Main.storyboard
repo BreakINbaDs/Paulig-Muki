@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -24,7 +24,8 @@
                                     <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="dae-LG-neH"/>
                                 </connections>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBu-9I-YNf">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBu-9I-YNf">
+                                <frame key="frameInset" minX="103" minY="293" width="169" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="oX2-bA-und"/>
                                 </constraints>
@@ -33,7 +34,8 @@
                                     <action selector="sendImageWithOptions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Gg-uP-i3A"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIS-ZS-m8P">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIS-ZS-m8P">
+                                <frame key="frameInset" minX="147" minY="339" width="81" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="nyD-HC-r5z"/>
                                 </constraints>
@@ -42,7 +44,8 @@
                                     <action selector="sendImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MQc-38-fLe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaL-GI-IIh">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaL-GI-IIh">
+                                <frame key="frameInset" minX="152" minY="385" width="70" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="8Vz-l6-ZYQ"/>
                                 </constraints>
@@ -90,7 +93,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XF2-dy-Wsk">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XF2-dy-Wsk">
+                                <frame key="frameInset" minX="169" minY="430" width="36" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="3ZM-Qy-31m"/>
                                 </constraints>
@@ -99,13 +103,22 @@
                                     <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nUN-yv-nHf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhC-ag-2J0">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhC-ag-2J0">
+                                <frame key="frameInset" minX="130" minY="477" width="115" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="xFA-kH-Fh1"/>
                                 </constraints>
                                 <state key="normal" title="Read Device info"/>
                                 <connections>
                                     <action selector="readDeviceInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Scw-cU-yoP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuj-pN-XVE">
+                                <frame key="frameInset" minX="130" minY="521" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Share Your Song"/>
+                                <connections>
+                                    <action selector="shareSong:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Evd-g0-sNq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -163,7 +176,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="500" y="490"/>
+            <point key="canvasLocation" x="500" y="489.80509745127438"/>
         </scene>
     </scenes>
     <resources>
